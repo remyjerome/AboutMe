@@ -1,7 +1,11 @@
 /*
  * Globals
  */
-
+/* Fonts */
+@font-face {
+    font-family: "aqua";
+    src: url('../fonts/aqua.ttf');
+}
 /* Links */
 a,
 a:focus,
@@ -28,6 +32,7 @@ html,
 body {
   height: 100%;
   background-color: #2c3e50;
+  font-family: "aqua";
 }
 body {
   color: #fff;
@@ -37,6 +42,31 @@ body {
   background-size : 100% 100%;
   background-repeat:no-repeat;
   display: compact;*/
+}
+.titre {
+    float: inherit;
+}
+h1 {
+    /* Utilisera MaSuperFonte-Bold.ttf */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+}
+h2 {
+    /* Utilisera MaSuperFonte-Italic.ttf */
+    font-style: italic;
+    font-weight: normal;
+}
+h3 {
+    /* Utilisera ??? (fonte bold italic non chargée!) */
+    font-style: italic;
+    font-weight: bold;
+}
+p {
+    /* Utilisera MaSuperFonte-Regular.ttf */
+    font-style: normal;
+    font-weight: normal;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */

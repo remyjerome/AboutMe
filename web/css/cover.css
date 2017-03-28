@@ -22,8 +22,18 @@ a:hover {
   background-color: #fff;
   border: 1px solid #fff;
 }
-
-
+.pull-down-left
+{
+  position:absolute;
+  left:5%;
+  bottom:5%;
+}
+.pull-down-right
+{
+  position:absolute;
+  right:5%;
+  bottom:5%;
+}
 /*
  * Base structure
  */

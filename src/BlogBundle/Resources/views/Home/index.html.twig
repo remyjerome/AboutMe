@@ -1,65 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="{{ asset('images/favicon.ico') }}">
+{# src/Bundle/Resources/views/Home/index.html.twig #}
+{% extends '::base.html.twig' %}
 
-    <title>About me</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="{{ asset('css/cover.css') }}" rel="stylesheet">
-
-  </head>
-
-  <body>
+{% block title %}
+About Me
+{% endblock %}
+{% block body %}
   <div class="container site-wrapper">
     <div class="row site-wrapper-inner">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
-          <h1 class="titre">About Me</h1>
-        </div>
+      <!--col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1-->
+      <div class="clearfix pull-left  col-md-offset-1 col-lg-offset-2">
+        <h1 class="hide titre">About Me</h1>
+      </div>
+      <div class="hidden-xs pull-right col-lg-4 col-lg-pull-2 col-md-4 col-md-pull-1">
+        <h1 class="hide titre">My Skills</h1>
+      </div>
+      <div class="hidden-xs pull-down-left">
+        <h1 class="hide titre">My Qualifications</h1>
+      </div>
+      <div class="hidden-xs pull-down-right">
+        <h1 class="hide titre">My Experiences</h1>
       </div>
       <div class="row">
-        <svg class="col-lg-12" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        width="576px" height="567px" viewBox="0 0 576 567" enable-background="new 0 0 576 567" xml:space="preserve">
-          <polygon id="polygon1" fill="#E74C3C" points="468,567 108,567 158.687,503.115 419.439,503.115 ">
-            <animate attributeName="fill" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon1.mouseover" end="polygon4.mouseout" dur="0.3s" fill="freeze"/>
+        <svg class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 max-width="704.696px" max-height="649.224px" viewBox="-64.495 -19.709 704.696 649.224"
+	 enable-background="new -64.495 -19.709 704.696 649.224" xml:space="preserve">
+          <polygon name="1" id="polygon1" fill="#E74C3C" points="468,567 108,567 158.687,503.115 419.439,503.115 ">
+            <animate attributeName="fill" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon1.mouseover" end="polygon1.mouseout" dur="0.3s" fill="freeze"/>
             <animate attributeName="fill" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon1.mouseout" dur="0.3s" fill="freeze"/>
           </polygon>
-          <polygon id="polygon2" fill="#E74C3C" points="99,567 0,225 81,252 153,495 ">
-            <animate attributeName="fill" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon2.mouseover" end="polygon4.mouseout" dur="0.3s" fill="freeze"/>
+          <polygon name="2" id="polygon2" fill="#E74C3C" points="99,567 0,225 81,252 153,495 ">
+            <animate attributeName="fill" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon2.mouseover" end="polygon2.mouseout" dur="0.3s" fill="freeze"/>
             <animate attributeName="fill" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon2.mouseout" dur="0.3s" fill="freeze"/>
           </polygon>
-          <polygon id="polygon3" fill="#E74C3C" points="576,225 477,567 422.492,495.001 495,252 ">
-            <animate attributeName="fill" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon3.mouseover" end="polygon4.mouseout" dur="0.3s" fill="freeze"/>
+          <polygon name="3" id="polygon3" fill="#E74C3C" points="576,225 477,567 422.492,495.001 495,252 ">
+            <animate attributeName="fill" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon3.mouseover" end="polygon3.mouseout" dur="0.3s" fill="freeze"/>
             <animate attributeName="fill" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon3.mouseout" dur="0.3s" fill="freeze"/>
           </polygon>
-          <polygon id="polygon4" fill="#E74C3C" points="0,216 288,0 288,90 81,243 ">
+          <polygon name="4" id="polygon4" fill="#E74C3C" points="0,216 288,0 288,90 81,243 ">
             <animate attributeName="fill" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon4.mouseover" end="polygon4.mouseout" dur="0.3s" fill="freeze"/>
             <animate attributeName="fill" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon4.mouseout" dur="0.3s" fill="freeze"/>
           </polygon>
-          <polygon id="polygon5" fill="#E74C3C" points="297,0 576,216 495,243 297,90 ">
-            <animate attributeName="fill" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon5.mouseover" end="polygon4.mouseout" dur="0.3s" fill="freeze"/>
+          <polygon name="5" id="polygon5" fill="#E74C3C" points="297,0 576,216 495,243 297,90 ">
+            <animate attributeName="fill" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon5.mouseover" end="polygon5.mouseout" dur="0.3s" fill="freeze"/>
             <animate attributeName="fill" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon5.mouseout" dur="0.3s" fill="freeze"/>
           </polygon>
+
+          <line id="line1" class="line hide hidden-xs" fill="none" stroke="#E74C3C" stroke-width="7" stroke-miterlimit="10" x1="292.584" y1="503.115" x2="292.584" y2="577.666">
+            <animate attributeName="stroke" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon1.mouseover" end="polygon1.mouseout" dur="0.3s" fill="freeze"/>
+            <animate attributeName="stroke" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon1.mouseout" dur="0.3s" fill="freeze"/>
+          </line>
+          <line id="line2" class="hide hidden-xs" fill="none" stroke="#E74C3C" stroke-width="7" stroke-miterlimit="10" x1="116.582" y1="375.094" x2="-39.786" y2="427.015">
+            <animate attributeName="stroke" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon2.mouseover" end="polygon2.mouseout" dur="0.3s" fill="freeze"/>
+            <animate attributeName="stroke" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon2.mouseout" dur="0.3s" fill="freeze"/>
+          </line>
+          <line id="line3" class="line hide hidden-xs" fill="none" stroke="#E74C3C" stroke-width="7" stroke-miterlimit="10" x1="467.547" y1="375.094" x2="612.286" y2="423.399">
+            <animate attributeName="stroke" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon3.mouseover" end="polygon3.mouseout" dur="0.3s" fill="freeze"/>
+            <animate attributeName="stroke" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon3.mouseout" dur="0.3s" fill="freeze"/>
+          </line>
+          <line id="line4" class="line hide hidden-xs" fill="none" stroke="#E74C3C" stroke-width="7" stroke-miterlimit="10" x1="176.725" y1="163.574" x2="74.215" y2="28.716">
+            <animate attributeName="stroke" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon4.mouseover" end="polygon4.mouseout" dur="0.3s" fill="freeze"/>
+            <animate attributeName="stroke" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon4.mouseout" dur="0.3s" fill="freeze"/>
+          </line>
+          <line id="line5" class="line hide hidden-xs" fill="none" stroke="#E74C3C" stroke-width="7" stroke-miterlimit="10" x1="405.997" y1="163.574" x2="511.252" y2="23.233">
+            <animate attributeName="stroke" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon5.mouseover" end="polygon5.mouseout" dur="0.3s" fill="freeze"/>
+            <animate attributeName="stroke" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon5.mouseout" dur="0.3s" fill="freeze"/>
+          </line>
+          <path id="path1" class="path hide hidden-xs" fill="none" stroke="#E74C3C" stroke-width="7" stroke-miterlimit="10" d="M304.793,589.876
+          	c0,6.745-5.463,12.208-12.209,12.208s-12.208-5.463-12.208-12.208c0-6.747,5.463-12.21,12.208-12.21
+          	C299.33,577.666,304.793,583.129,304.793,589.876z">
+            <animate attributeName="stroke" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon1.mouseover" end="polygon1.mouseout" dur="0.3s" fill="freeze"/>
+            <animate attributeName="stroke" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon1.mouseout" dur="0.3s" fill="freeze"/>
+          </path>
+          <path id="path2" class="path hide hidden-xs" fill="none" stroke="#E74C3C" stroke-width="7" stroke-miterlimit="10" d="M-36.578,430.645
+          	c0,6.745-5.462,12.208-12.209,12.208c-6.745,0-12.208-5.463-12.208-12.208c0-6.747,5.463-12.21,12.208-12.21
+          	C-42.04,418.435-36.578,423.897-36.578,430.645z">
+            <animate attributeName="stroke" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon2.mouseover" end="polygon2.mouseout" dur="0.3s" fill="freeze"/>
+            <animate attributeName="stroke" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon2.mouseout" dur="0.3s" fill="freeze"/>
+          </path>
+          <path id="path3" class="path hide hidden-xs" fill="none" stroke="#E74C3C" stroke-width="7" stroke-miterlimit="10" d="M636.702,428.644
+          	c0,6.745-5.461,12.208-12.209,12.208c-6.744,0-12.207-5.463-12.207-12.208c0-6.746,5.463-12.209,12.207-12.209
+          	C631.241,416.435,636.702,421.897,636.702,428.644z">
+            <animate attributeName="stroke" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon3.mouseover" end="polygon3.mouseout" dur="0.3s" fill="freeze"/>
+            <animate attributeName="stroke" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon3.mouseout" dur="0.3s" fill="freeze"/>
+          </path>
+          <path id="path4" class="path hide hidden-xs" fill="none" stroke="#E74C3C" stroke-width="7" stroke-miterlimit="10" d="M77.5,17.508c0,6.745-5.462,12.208-12.209,12.208
+            c-6.745,0-12.208-5.463-12.208-12.208c0-6.747,5.463-12.21,12.208-12.21C74.707,5.298,77.5,10.759,77.5,17.508z">
+            <animate attributeName="stroke" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon4.mouseover" end="polygon4.mouseout" dur="0.3s" fill="freeze"/>
+            <animate attributeName="stroke" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon4.mouseout" dur="0.3s" fill="freeze"/>
+          </path>
+          <path id="path5" class="path hide hidden-xs" fill="none" stroke="#E74C3C" stroke-width="7" stroke-miterlimit="10" d="M528.7,16.508c0,6.745-5.463,12.208-12.209,12.208
+          	s-12.209-5.463-12.209-12.208c0-6.747,5.463-12.21,12.209-12.21S528.7,9.761,528.7,16.508z">
+            <animate attributeName="stroke" attributeType="CSS" from="#E74C3C" to="#fbfcfc" begin="polygon5.mouseover" end="polygon5.mouseout" dur="0.3s" fill="freeze"/>
+            <animate attributeName="stroke" attributeType="CSS" from="#fbfcfc" to="#E74C3C" begin="polygon5.mouseout" dur="0.3s" fill="freeze"/>
+          </path>
+
+          <polygon fill="none" points="165.178,489.082 96.382,252.752 293.584,105.516 479.786,251.752 411.99,489.082 "/>
+          <text class="textpoly hide" transform="matrix(1 0 0 1 206.0117 230.3159)"><tspan x="0" y="0" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="35">TitreTest</tspan><tspan x="-98.004" y="45.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">Lorem</tspan><tspan x="-26.039" y="45.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="8"> </tspan><tspan x="-7.277" y="45.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">ipsum</tspan><tspan x="56.814" y="45.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="8"> </tspan><tspan x="75.576" y="45.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">dolor</tspan><tspan x="135.719" y="45.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="8"> </tspan><tspan x="154.481" y="45.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">sit</tspan><tspan x="180.206" y="45.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="8"> </tspan><tspan x="198.967" y="45.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">amet</tspan><tspan x="257.641" y="45.2" fill="#ECF0F1" font-family="'MyriadPro-Regular'" font-size="21">,</tspan><tspan x="261.988" y="45.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21"> </tspan><tspan x="-90.668" y="70.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">consectetur</tspan><tspan x="44.843" y="70.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="17"> </tspan><tspan x="72.463" y="70.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">adipiscing</tspan><tspan x="185.42" y="70.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="17"> </tspan><tspan x="213.042" y="70.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">elit. </tspan><tspan x="-83.333" y="95.6" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">Nulla</tspan><tspan x="-28.524" y="95.6" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="3"> </tspan><tspan x="-14.689" y="95.6" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">ultrices</tspan><tspan x="68.512" y="95.6" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="3"> </tspan><tspan x="82.347" y="95.6" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">interdum</tspan><tspan x="184.09" y="95.6" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="3"> </tspan><tspan x="197.925" y="95.6" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">eros </tspan><tspan x="-75.998" y="120.8" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">id</tspan><tspan x="-55.46" y="120.8" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="1">  </tspan><tspan x="-31.642" y="120.8" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">mauriortor</tspan><tspan x="92.886" y="120.8" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="1"> </tspan><tspan x="104.795" y="120.8" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">eget</tspan><tspan x="158.344" y="120.8" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="1"> </tspan><tspan x="170.253" y="120.8" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">condi</tspan><tspan x="231.426" y="120.8" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">-</tspan><tspan x="-68.662" y="146" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">mentum</tspan><tspan x="22.267" y="146" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="8"> </tspan><tspan x="40.844" y="146" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">bibendum</tspan><tspan x="151.071" y="146" fill="#ECF0F1" font-family="'MyriadPro-Regular'" font-size="21">,</tspan><tspan x="155.417" y="146" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="8"> </tspan><tspan x="173.994" y="146" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">tellus </tspan><tspan x="-61.326" y="171.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">nunc</tspan><tspan x="-9.141" y="171.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="13"> </tspan><tspan x="15.073" y="171.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">luctus</tspan><tspan x="79.878" y="171.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="13"> </tspan><tspan x="104.092" y="171.2" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">mpharetra </tspan><tspan x="-53.991" y="196.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">libero</tspan><tspan x="12.284" y="196.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="-1"> </tspan><tspan x="21.12" y="196.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">nibh</tspan><tspan x="67.655" y="196.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="-1"> </tspan><tspan x="76.491" y="196.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">ut</tspan><tspan x="98.961" y="196.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="-1"> </tspan><tspan x="107.796" y="196.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">massa.</tspan><tspan x="182.408" y="196.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="-1"> </tspan><tspan x="191.244" y="196.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">In</tspan><tspan x="209.829" y="196.4" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">-</tspan><tspan x="-46.654" y="221.6" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">teger</tspan><tspan x="17.689" y="221.6" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="11"> </tspan><tspan x="39.799" y="221.6" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">vehicula</tspan><tspan x="132.787" y="221.6" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21" letter-spacing="11"> </tspan><tspan x="154.897" y="221.6" fill="#ECF0F1" font-family="'AquaGrotesque'" font-size="21">arcu.</tspan></text>
         </svg>
       </div>
     </div>
   </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-  </body>
-</html>
+{% endblock %}
